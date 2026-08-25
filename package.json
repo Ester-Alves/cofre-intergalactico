@@ -1,0 +1,17 @@
+{
+  "name": "cofre-intergalactico",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^26.3.0",
+    "js-yaml": "^5.4.0"
+  }
+}
