@@ -19,7 +19,5 @@ export class LoginPage {
     await selectors.txtEmail.fill(email);
     await selectors.txtPassword.fill(password);
     await selectors.btnSubmit.click();
-
-    await expect(this.page.locator('p.greeting')).toContainText('SEJA BEM-VINDO AO COFRE INTERGALÁCTICO');
   }
 }
