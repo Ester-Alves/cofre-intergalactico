@@ -31,9 +31,3 @@ test('não deve cadastrar nova receita sem valor recebido', async ({ page }) => 
     await cadastroReceita.cadastrarReceita('Nave 3000', '', '2026-10-22', 'Aluguel', 'Recebimento à vista');
     await Asserts.validarElementoVisivel(page.getByText('O valor deve ser maior que zero.'));
 })
-
-//   static readonly ERRO_ORIGEM = 'Identificação da origem é obrigatória.';
-//   static readonly ERRO_VALOR = 'O valor deve ser maior que zero.';
-//   static readonly ERRO_TIPO_CREDITO = 'Selecione um Tipo de Crédito.';
-
-//   static readonly SUCESSO = 'COFRE ABASTECIDO!';

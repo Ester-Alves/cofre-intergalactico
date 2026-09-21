@@ -3,6 +3,7 @@ import { readFileSync } from 'node:fs';
 import path from 'node:path';
 import { load } from 'js-yaml';
 import { getHomeSelectors } from '../selectors/HomeSelectors';
+import { Actions } from '../utils/Actions';
 
 const config = load(
   readFileSync(path.resolve(__dirname, '../resources/config/url-prod.yml'), 'utf8'),
@@ -10,16 +11,18 @@ const config = load(
 
 export class HomePage {
   private readonly selectors: ReturnType<typeof getHomeSelectors>;
+  private readonly actions = new Actions();
+
 
   constructor(private readonly page: Page) {
     this.selectors = getHomeSelectors(this.page);
   }
 
   async btnCadastrarReceita() {
-    await this.selectors.btnCadastReceita.click();
+    await this.actions.click(this.selectors.btnCadastReceita);
   }
 
   async btnCadastrarDespesa() {
-    await this.selectors.btnCadastDespesa.click();
+    await this.actions.click(this.selectors.btnCadastDespesa);
   }
 }
