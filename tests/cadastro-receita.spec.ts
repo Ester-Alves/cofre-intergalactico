@@ -6,11 +6,11 @@ import { Asserts } from '../src/utils/Asserts';
 
 test.beforeEach(async ({ page }) => {
     const loginPage = new LoginPage(page);
-    await loginPage.login('ester@cristina.com', 'Portal@123');
+    await loginPage.realizarLogin('ester@cristina.com', 'Portal@123');
     await Asserts.validarElementoVisivel(page.getByText('SEJA BEM-VINDO AO COFRE INTERGALÁCTICO'));
 
     const homePage = new HomePage(page);
-    await homePage.btnCadastrarReceita();
+    await homePage.incluirCadastroReceita();
     await Asserts.validarElementoVisivel(page.getByText('NOVA RECEITA'));
 })
 

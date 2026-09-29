@@ -10,4 +10,13 @@ export class Actions {
 			throw error;
 		}
 	}
+
+	async preencher(locator: Locator, value: string): Promise<void> {
+		try {
+			await Asserts.validarElementoVisivel(locator);
+			await locator.fill(value);
+		} catch (error: any) {
+			throw error;
+		}
+	}
 }

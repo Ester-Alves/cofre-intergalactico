@@ -13,16 +13,15 @@ export class HomePage {
   private readonly selectors: ReturnType<typeof getHomeSelectors>;
   private readonly actions = new Actions();
 
-
   constructor(private readonly page: Page) {
     this.selectors = getHomeSelectors(this.page);
   }
 
-  async btnCadastrarReceita() {
+  async incluirCadastroReceita() {
     await this.actions.click(this.selectors.btnCadastReceita);
   }
 
-  async btnCadastrarDespesa() {
+  async incluirCadastroDespesa() {
     await this.actions.click(this.selectors.btnCadastDespesa);
   }
 }
