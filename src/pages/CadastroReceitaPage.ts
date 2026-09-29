@@ -25,25 +25,25 @@ export class CadastroReceita {
     formaRecebimento: string,
     quantidadeParcelas?: string
   ) {
-    await this.selectors.origem.fill(origem);
-    await this.selectors.valor.fill(valor);
-    await this.selectors.data.fill(data);
+    await this.actions.preencher(this.selectors.txtOrigem, origem);
+    await this.actions.preencher(this.selectors.txtValor, valor);
+    await this.actions.preencher(this.selectors.txtData, data);
 
-    await this.actions.click(this.selectors.tipoCredito);
+    await this.actions.click(this.selectors.btnTipoCredito);
     await this.actions.click(this.page.getByText(tipoCredito));
 
-    // Verifica se é parcelado    //condição ternária
-    const pagamentoParcelado = formaRecebimento.toLowerCase().includes('parcelado');
-    const formaRecebimentoLocator = pagamentoParcelado
-      ? this.selectors.formaRecebimento.parcelado
-      : this.selectors.formaRecebimento.aVista;
-
-    await this.actions.click(formaRecebimentoLocator);
-
-    if (pagamentoParcelado) {
-      await this.selectors.quantidadeParcelas.fill(quantidadeParcelas ?? '');
+    switch (formaRecebimento.toLowerCase()) {
+      case 'recebimento à vista':
+        await this.actions.click(this.selectors.btnRecebimentoAVista);
+        break;
+      case 'recebimento parcelado':
+        await this.actions.click(this.selectors.btnParcelado);
+        await this.actions.preencher(this.selectors.txtQuantidadeParcelas, quantidadeParcelas ?? '');
+        break;
+      default:
+        throw new Error(`Forma de recebimento inválida: ${formaRecebimento}`);
     }
-    
+
     await this.actions.click(this.selectors.btnCadastrar);
   }
 }
