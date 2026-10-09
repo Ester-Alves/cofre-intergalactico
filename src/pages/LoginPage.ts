@@ -1,13 +1,7 @@
 import { expect, type Page } from '@playwright/test';
-import { readFileSync } from 'node:fs';
-import path from 'node:path';
-import { load } from 'js-yaml';
 import { getLoginSelectors } from '../selectors/LoginSelectors';
 import { Actions } from '../utils/Actions';
-
-const config = load(
-  readFileSync(path.resolve(__dirname, '../resources/config/url-prod.yml'), 'utf8'),
-) as { 'base-url': string };
+import { YamlReader } from '../utils/yamlReader';
 
 export class LoginPage {
   private readonly actions = new Actions();
@@ -17,7 +11,7 @@ export class LoginPage {
   async realizarLogin(email: string, password: string) {
     const selectors = getLoginSelectors(this.page);
 
-    await this.page.goto(config['base-url']);
+    await this.page.goto(YamlReader.get<string>('config', 'base-url'));
     await this.actions.click(selectors.btnDoLogin);
     await this.actions.preencher(selectors.txtEmail, email);
     await this.actions.preencher(selectors.txtPassword, password);

@@ -3,10 +3,11 @@ import { LoginPage } from '../src/pages/LoginPage';
 import { HomePage } from '../src/pages/HomePage';
 import { CadastroReceita } from '../src/pages/CadastroReceitaPage';
 import { Asserts } from '../src/utils/Asserts';
+import { YamlReader } from '../src/utils/yamlReader';
 
 test.beforeEach(async ({ page }) => {
     const loginPage = new LoginPage(page);
-    await loginPage.realizarLogin('ester@cristina.com', 'Portal@123');
+    await loginPage.realizarLogin(YamlReader.get<string>('data', 'usuario-valido.email'), YamlReader.get<string>('data', 'usuario-valido.senha'));
     await Asserts.validarElementoVisivel(page.getByText('SEJA BEM-VINDO AO COFRE INTERGALÁCTICO'));
 
     const homePage = new HomePage(page);
