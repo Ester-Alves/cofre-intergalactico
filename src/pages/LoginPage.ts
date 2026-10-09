@@ -18,9 +18,9 @@ export class LoginPage {
     const selectors = getLoginSelectors(this.page);
 
     await this.page.goto(config['base-url']);
-    await selectors.btnDoLogin.click();
+    await this.actions.click(selectors.btnDoLogin);
     await this.actions.preencher(selectors.txtEmail, email);
     await this.actions.preencher(selectors.txtPassword, password);
-    await selectors.btnSubmit.click();
+    await this.actions.click(selectors.btnSubmit);
   }
 }
