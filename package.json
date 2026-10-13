@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+	  "login": "npx playwright test tests/login.spec.ts",
+    "cadastro": "npx playwright test tests/cadastro-receita.spec.ts",
+    "tag": "npx playwright test --grep"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",

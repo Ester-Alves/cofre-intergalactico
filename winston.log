@@ -489,3 +489,85 @@ Received: undefined
 [ 2026-10-13T21:29:00.137Z | 0f2a4ea3-1c6c-4911-a943-4b29b787393d ] [DEBUG] [CustomAsserts] Validação concluída: locator('#revenue-submit') está clicável.
 [ 2026-10-13T21:29:00.503Z | 0f2a4ea3-1c6c-4911-a943-4b29b787393d ] [DEBUG] [Actions] Clique executado no locator('#revenue-submit')
 [ 2026-10-13T21:29:00.581Z | 0f2a4ea3-1c6c-4911-a943-4b29b787393d ] [DEBUG] [CustomAsserts] Validação concluída: getByText('O valor deve ser maior que zero.') está visível.
+[ 2026-10-13T23:15:56.181Z | 9bc04454-6ddd-4aff-bb39-aff5ae5e0579 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#landing-login') está clicável.
+[ 2026-10-13T23:15:56.236Z | 9bc04454-6ddd-4aff-bb39-aff5ae5e0579 ] [DEBUG] [Actions] Clique executado no locator('#landing-login')
+[ 2026-10-13T23:15:56.280Z | 9bc04454-6ddd-4aff-bb39-aff5ae5e0579 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-email') está visível.
+[ 2026-10-13T23:15:56.283Z | 3d55f803-f304-466b-9d5d-5e5cf915e2ec ] [DEBUG] [CustomAsserts] Validação concluída: locator('#landing-login') está clicável.
+[ 2026-10-13T23:15:56.288Z | 9bc04454-6ddd-4aff-bb39-aff5ae5e0579 ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-email')
+[ 2026-10-13T23:15:56.316Z | 9bc04454-6ddd-4aff-bb39-aff5ae5e0579 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-password') está visível.
+[ 2026-10-13T23:15:56.336Z | 9bc04454-6ddd-4aff-bb39-aff5ae5e0579 ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-password')
+[ 2026-10-13T23:15:56.344Z | 3d55f803-f304-466b-9d5d-5e5cf915e2ec ] [DEBUG] [Actions] Clique executado no locator('#landing-login')
+[ 2026-10-13T23:15:56.403Z | 3d55f803-f304-466b-9d5d-5e5cf915e2ec ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-email') está visível.
+[ 2026-10-13T23:15:56.410Z | 9bc04454-6ddd-4aff-bb39-aff5ae5e0579 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-submit') está clicável.
+[ 2026-10-13T23:15:56.413Z | 3d55f803-f304-466b-9d5d-5e5cf915e2ec ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-email')
+[ 2026-10-13T23:15:56.428Z | 3d55f803-f304-466b-9d5d-5e5cf915e2ec ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-password') está visível.
+[ 2026-10-13T23:15:56.463Z | 3d55f803-f304-466b-9d5d-5e5cf915e2ec ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-password')
+[ 2026-10-13T23:15:56.475Z | 9bc04454-6ddd-4aff-bb39-aff5ae5e0579 ] [DEBUG] [Actions] Clique executado no locator('#login-submit')
+[ 2026-10-13T23:15:56.476Z | 9bc04454-6ddd-4aff-bb39-aff5ae5e0579 ] [DEBUG] [LoginPage] Login efetuado com sucesso.
+[ 2026-10-13T23:15:56.547Z | 3d55f803-f304-466b-9d5d-5e5cf915e2ec ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-submit') está clicável.
+[ 2026-10-13T23:15:56.598Z | 3d55f803-f304-466b-9d5d-5e5cf915e2ec ] [DEBUG] [Actions] Clique executado no locator('#login-submit')
+[ 2026-10-13T23:15:56.598Z | 3d55f803-f304-466b-9d5d-5e5cf915e2ec ] [DEBUG] [LoginPage] Login efetuado com sucesso.
+[ 2026-10-13T23:19:08.486Z | a5dbdfcf-8ac9-4d4d-a1bc-98f6f65eb533 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#landing-login') está clicável.
+[ 2026-10-13T23:19:08.594Z | 41324de6-d907-4293-a78e-d09cb5b0d104 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#landing-login') está clicável.
+[ 2026-10-13T23:19:08.604Z | a5dbdfcf-8ac9-4d4d-a1bc-98f6f65eb533 ] [DEBUG] [Actions] Clique executado no locator('#landing-login')
+[ 2026-10-13T23:19:08.664Z | 41324de6-d907-4293-a78e-d09cb5b0d104 ] [DEBUG] [Actions] Clique executado no locator('#landing-login')
+[ 2026-10-13T23:19:08.698Z | a5dbdfcf-8ac9-4d4d-a1bc-98f6f65eb533 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-email') está visível.
+[ 2026-10-13T23:19:08.737Z | a5dbdfcf-8ac9-4d4d-a1bc-98f6f65eb533 ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-email')
+[ 2026-10-13T23:19:08.750Z | 41324de6-d907-4293-a78e-d09cb5b0d104 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-email') está visível.
+[ 2026-10-13T23:19:08.791Z | a5dbdfcf-8ac9-4d4d-a1bc-98f6f65eb533 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-password') está visível.
+[ 2026-10-13T23:19:08.798Z | 41324de6-d907-4293-a78e-d09cb5b0d104 ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-email')
+[ 2026-10-13T23:19:08.843Z | a5dbdfcf-8ac9-4d4d-a1bc-98f6f65eb533 ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-password')
+[ 2026-10-13T23:19:08.864Z | 41324de6-d907-4293-a78e-d09cb5b0d104 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-password') está visível.
+[ 2026-10-13T23:19:08.907Z | 41324de6-d907-4293-a78e-d09cb5b0d104 ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-password')
+[ 2026-10-13T23:19:08.997Z | a5dbdfcf-8ac9-4d4d-a1bc-98f6f65eb533 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-submit') está clicável.
+[ 2026-10-13T23:19:09.040Z | 41324de6-d907-4293-a78e-d09cb5b0d104 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-submit') está clicável.
+[ 2026-10-13T23:19:09.093Z | a5dbdfcf-8ac9-4d4d-a1bc-98f6f65eb533 ] [DEBUG] [Actions] Clique executado no locator('#login-submit')
+[ 2026-10-13T23:19:09.095Z | a5dbdfcf-8ac9-4d4d-a1bc-98f6f65eb533 ] [DEBUG] [LoginPage] Login efetuado com sucesso.
+[ 2026-10-13T23:19:09.129Z | 41324de6-d907-4293-a78e-d09cb5b0d104 ] [DEBUG] [Actions] Clique executado no locator('#login-submit')
+[ 2026-10-13T23:19:09.130Z | 41324de6-d907-4293-a78e-d09cb5b0d104 ] [DEBUG] [LoginPage] Login efetuado com sucesso.
+[ 2026-10-13T23:21:24.166Z | 65825420-3ab7-4c08-abf3-f4e090e2811f ] [DEBUG] [CustomAsserts] Validação concluída: locator('#landing-login') está clicável.
+[ 2026-10-13T23:21:24.217Z | 65825420-3ab7-4c08-abf3-f4e090e2811f ] [DEBUG] [Actions] Clique executado no locator('#landing-login')
+[ 2026-10-13T23:21:24.272Z | 65825420-3ab7-4c08-abf3-f4e090e2811f ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-email') está visível.
+[ 2026-10-13T23:21:24.286Z | 65825420-3ab7-4c08-abf3-f4e090e2811f ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-email')
+[ 2026-10-13T23:21:24.300Z | 65825420-3ab7-4c08-abf3-f4e090e2811f ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-password') está visível.
+[ 2026-10-13T23:21:24.336Z | 65825420-3ab7-4c08-abf3-f4e090e2811f ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-password')
+[ 2026-10-13T23:21:24.430Z | 65825420-3ab7-4c08-abf3-f4e090e2811f ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-submit') está clicável.
+[ 2026-10-13T23:21:24.478Z | 65825420-3ab7-4c08-abf3-f4e090e2811f ] [DEBUG] [Actions] Clique executado no locator('#login-submit')
+[ 2026-10-13T23:21:24.478Z | 65825420-3ab7-4c08-abf3-f4e090e2811f ] [DEBUG] [LoginPage] Login efetuado com sucesso.
+[ 2026-10-13T23:21:52.941Z | e97a380f-fcba-4fec-be6a-06164f2a06d6 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#landing-login') está clicável.
+[ 2026-10-13T23:21:53.032Z | e97a380f-fcba-4fec-be6a-06164f2a06d6 ] [DEBUG] [Actions] Clique executado no locator('#landing-login')
+[ 2026-10-13T23:21:53.098Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [CustomAsserts] Validação concluída: locator('#landing-login') está clicável.
+[ 2026-10-13T23:21:53.161Z | e97a380f-fcba-4fec-be6a-06164f2a06d6 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-email') está visível.
+[ 2026-10-13T23:21:53.187Z | e97a380f-fcba-4fec-be6a-06164f2a06d6 ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-email')
+[ 2026-10-13T23:21:53.203Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [Actions] Clique executado no locator('#landing-login')
+[ 2026-10-13T23:21:53.228Z | e97a380f-fcba-4fec-be6a-06164f2a06d6 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-password') está visível.
+[ 2026-10-13T23:21:53.268Z | e97a380f-fcba-4fec-be6a-06164f2a06d6 ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-password')
+[ 2026-10-13T23:21:53.300Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-email') está visível.
+[ 2026-10-13T23:21:53.341Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-email')
+[ 2026-10-13T23:21:53.383Z | e97a380f-fcba-4fec-be6a-06164f2a06d6 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-submit') está clicável.
+[ 2026-10-13T23:21:53.393Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-password') está visível.
+[ 2026-10-13T23:21:53.438Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-password')
+[ 2026-10-13T23:21:53.515Z | e97a380f-fcba-4fec-be6a-06164f2a06d6 ] [DEBUG] [Actions] Clique executado no locator('#login-submit')
+[ 2026-10-13T23:21:53.516Z | e97a380f-fcba-4fec-be6a-06164f2a06d6 ] [DEBUG] [LoginPage] Login efetuado com sucesso.
+[ 2026-10-13T23:21:53.597Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-submit') está clicável.
+[ 2026-10-13T23:21:53.696Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [Actions] Clique executado no locator('#login-submit')
+[ 2026-10-13T23:21:53.696Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [LoginPage] Login efetuado com sucesso.
+[ 2026-10-13T23:21:54.583Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [CustomAsserts] Validação concluída: getByText('SEJA BEM-VINDO AO COFRE INTERGALÁCTICO') está visível.
+[ 2026-10-13T23:21:55.298Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [CustomAsserts] Validação concluída: locator('#home-new-revenue') está clicável.
+[ 2026-10-13T23:21:55.363Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [Actions] Clique executado no locator('#home-new-revenue')
+[ 2026-10-13T23:21:55.458Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [CustomAsserts] Validação concluída: getByText('NOVA RECEITA') está visível.
+[ 2026-10-13T23:21:55.492Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [CustomAsserts] Validação concluída: locator('#revenue-source') está visível.
+[ 2026-10-13T23:21:55.520Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [Actions] Texto preenchido no campo locator('#revenue-source')
+[ 2026-10-13T23:21:55.568Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [CustomAsserts] Validação concluída: locator('#revenue-amount') está visível.
+[ 2026-10-13T23:21:55.613Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [Actions] Texto preenchido no campo locator('#revenue-amount')
+[ 2026-10-13T23:21:55.639Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [CustomAsserts] Validação concluída: locator('#revenue-date') está visível.
+[ 2026-10-13T23:21:55.682Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [Actions] Texto preenchido no campo locator('#revenue-date')
+[ 2026-10-13T23:21:55.786Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [CustomAsserts] Validação concluída: locator('#revenue-category') está clicável.
+[ 2026-10-13T23:21:55.849Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [Actions] Clique executado no locator('#revenue-category')
+[ 2026-10-13T23:21:56.716Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [CustomAsserts] Validação concluída: getByText('Aluguel') está clicável.
+[ 2026-10-13T23:21:56.763Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [Actions] Clique executado no getByText('Aluguel')
+[ 2026-10-13T23:21:56.824Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [CustomAsserts] Validação concluída: locator('#revenue-method-debit') está clicável.
+[ 2026-10-13T23:21:56.892Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [Actions] Clique executado no locator('#revenue-method-debit')
+[ 2026-10-13T23:21:56.961Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [CustomAsserts] Validação concluída: locator('#revenue-submit') está clicável.
+[ 2026-10-13T23:21:57.011Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [Actions] Clique executado no locator('#revenue-submit')
+[ 2026-10-13T23:21:58.354Z | 88625850-9ff4-4cb4-82b1-7a56ab0d0c0e ] [DEBUG] [CustomAsserts] Validação concluída: getByText('COFRE ABASTECIDO!') está visível.

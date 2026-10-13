@@ -15,7 +15,7 @@ test.beforeEach(async ({ page }) => {
     await Asserts.validarElementoVisivel(page.getByText('NOVA RECEITA'));
 })
 
-test('cadastrar nova receita com pagamento a vista com sucesso', async ({ page }) => {
+test('cadastrar nova receita com pagamento a vista com sucesso', { tag: '@smoke' }, async ({ page }) => {
     const cadastroReceita = new CadastroReceita(page);
     await cadastroReceita.registrarReceita('Nave 3000', '10000', '2026-10-22', 'Aluguel', 'Recebimento à vista', '');
     await Asserts.validarElementoVisivel(page.getByText('COFRE ABASTECIDO!'));

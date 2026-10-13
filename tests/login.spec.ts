@@ -2,7 +2,7 @@ import { test, expect } from '@playwright/test';
 import { LoginPage } from '../src/pages/LoginPage';
 import { YamlReader } from '../src/utils/yamlReader';
 
-test('efetuar login com sucesso', async ({ page }) => {
+test('efetuar login com sucesso', { tag: '@smoke' }, async ({ page }) => {
   const loginPage = new LoginPage(page);
   await loginPage.realizarLogin(YamlReader.get('data', 'usuario-valido.email'), YamlReader.get('data', 'usuario-valido.senha'));
   await expect(page.locator('p.greeting')).toContainText('SEJA BEM-VINDO AO COFRE INTERGALÁCTICO');
