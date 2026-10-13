@@ -1,7 +1,6 @@
 import { test, expect } from '@playwright/test';
 import { LoginPage } from '../src/pages/LoginPage';
 import { YamlReader } from '../src/utils/yamlReader';
-import { YamlReader } from '../src/utils/yamlReader';
 
 test('efetuar login com sucesso', async ({ page }) => {
   const loginPage = new LoginPage(page);
