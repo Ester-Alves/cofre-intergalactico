@@ -1,0 +1,119 @@
+[ 2026-10-05T23:30:32.747Z | d46140ba-ebc2-4e30-a320-e1e9178722fa ] [DEBUG] [ElementActions] Clique falhou no elemento locator('#landing-login'): locator.click: Test timeout of 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('#landing-login')[22m
+[2m    - locator resolved to <button name="login" id="landing-login" class="btn btn-login">LOGIN</button>[22m
+[2m  - attempting click action (trial run)[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+
+[ 2026-10-06T13:27:43.111Z | d2c1f5e5-696e-4509-89e3-1a70edb5a31c ] [DEBUG] [CustomAsserts] Validação falhou: locator('#landing-login') não está clicável: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('#landing-login')[22m
+[2m    - locator resolved to <button name="login" id="landing-login" class="btn btn-login">LOGIN</button>[22m
+[2m  - attempting click action (trial run)[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+
+[ 2026-10-06T13:27:43.114Z | d2c1f5e5-696e-4509-89e3-1a70edb5a31c ] [DEBUG] [Actions] Clique falhou no locator('#landing-login'): locator.click: Test timeout of 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('#landing-login')[22m
+[2m    - locator resolved to <button name="login" id="landing-login" class="btn btn-login">LOGIN</button>[22m
+[2m  - attempting click action (trial run)[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+
+[ 2026-10-06T13:33:51.967Z | f5b87be1-1dd0-4e8f-888a-a57220274ae2 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#landing-login') está clicável.
+[ 2026-10-06T13:34:09.627Z | f5b87be1-1dd0-4e8f-888a-a57220274ae2 ] [DEBUG] [Actions] Clique executado no locator('#landing-login')
+[ 2026-10-06T13:34:10.067Z | f5b87be1-1dd0-4e8f-888a-a57220274ae2 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-email') está visível.
+[ 2026-10-06T13:34:12.180Z | f5b87be1-1dd0-4e8f-888a-a57220274ae2 ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-email')
+[ 2026-10-06T13:34:12.306Z | f5b87be1-1dd0-4e8f-888a-a57220274ae2 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-password') está visível.
+[ 2026-10-06T13:34:12.663Z | f5b87be1-1dd0-4e8f-888a-a57220274ae2 ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-password')
+[ 2026-10-06T13:34:20.471Z | f5b87be1-1dd0-4e8f-888a-a57220274ae2 ] [DEBUG] [CustomAsserts] Validação falhou: locator('#login-submit') não está clicável: locator.click: Test timeout of 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('#login-submit')[22m
+[2m    - locator resolved to <button type="submit" id="login-submit" name="submit-login" class="btn btn-login-submit">ABRIR COFRE</button>[22m
+[2m  - attempting click action (trial run)[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+
+[ 2026-10-06T13:34:20.473Z | f5b87be1-1dd0-4e8f-888a-a57220274ae2 ] [DEBUG] [Actions] Clique falhou no locator('#login-submit'): locator.click: Test timeout of 30000ms exceeded.
+Call log:
+[2m  - waiting for locator('#login-submit')[22m
+[2m    - locator resolved to <button type="submit" id="login-submit" name="submit-login" class="btn btn-login-submit">ABRIR COFRE</button>[22m
+[2m  - attempting click action (trial run)[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+
+[ 2026-10-06T13:39:25.531Z | 62c91e2e-b61c-48e1-9b6d-3267f986743f ] [DEBUG] [CustomAsserts] Validação concluída: locator('#landing-login') está clicável.
+[ 2026-10-06T13:39:26.606Z | 62c91e2e-b61c-48e1-9b6d-3267f986743f ] [DEBUG] [Actions] Clique executado no locator('#landing-login')
+[ 2026-10-06T13:39:26.760Z | 62c91e2e-b61c-48e1-9b6d-3267f986743f ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-email') está visível.
+[ 2026-10-06T13:39:26.974Z | 62c91e2e-b61c-48e1-9b6d-3267f986743f ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-email')
+[ 2026-10-06T13:39:27.051Z | 62c91e2e-b61c-48e1-9b6d-3267f986743f ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-password') está visível.
+[ 2026-10-06T13:39:27.143Z | 62c91e2e-b61c-48e1-9b6d-3267f986743f ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-password')
+[ 2026-10-06T13:39:27.589Z | 62c91e2e-b61c-48e1-9b6d-3267f986743f ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-submit') está clicável.
+[ 2026-10-06T13:39:29.318Z | 62c91e2e-b61c-48e1-9b6d-3267f986743f ] [DEBUG] [Actions] Clique executado no locator('#login-submit')
+[ 2026-10-06T13:40:44.827Z | 424bf34c-1693-4df3-8cba-9a85a1ca7904 ] [DEBUG] [CustomAsserts] Validação falhou: locator('#landing-login') não está clicável: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeEnabled[2m([22m[2m)[22m failed
+
+Locator:  locator('#landing-login')
+Expected: enabled
+Received: undefined
+
+[ 2026-10-06T13:40:44.832Z | 424bf34c-1693-4df3-8cba-9a85a1ca7904 ] [DEBUG] [Actions] Clique falhou no locator('#landing-login'): [2mexpect([22m[31mlocator[39m[2m).[22mtoBeEnabled[2m([22m[2m)[22m failed
+
+Locator:  locator('#landing-login')
+Expected: enabled
+Received: undefined
+
+[ 2026-10-06T13:43:36.548Z | 7b26f929-3eec-4937-afdd-a9a8db5baadd ] [DEBUG] [CustomAsserts] Validação falhou: locator('#landing-login') não está clicável: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeEnabled[2m([22m[2m)[22m failed
+
+Locator:  locator('#landing-login')
+Expected: enabled
+Received: undefined
+
+[ 2026-10-06T13:43:36.552Z | 7b26f929-3eec-4937-afdd-a9a8db5baadd ] [DEBUG] [Actions] Clique falhou no locator('#landing-login'): [2mexpect([22m[31mlocator[39m[2m).[22mtoBeEnabled[2m([22m[2m)[22m failed
+
+Locator:  locator('#landing-login')
+Expected: enabled
+Received: undefined
+
+[ 2026-10-06T13:56:07.643Z | d7ef4407-1bb8-4aad-8624-9d5a1b69bc9e ] [DEBUG] [CustomAsserts] Validação falhou: locator('#landing-login') não está clicável: locator.click: Test ended.
+Call log:
+[2m  - waiting for locator('#landing-login')[22m
+[2m    - locator resolved to <button name="login" id="landing-login" class="btn btn-login">LOGIN</button>[22m
+[2m  - attempting click action (trial run)[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+
+[ 2026-10-06T13:56:07.647Z | d7ef4407-1bb8-4aad-8624-9d5a1b69bc9e ] [DEBUG] [Actions] Clique falhou no locator('#landing-login'): locator.click: Test ended.
+Call log:
+[2m  - waiting for locator('#landing-login')[22m
+[2m    - locator resolved to <button name="login" id="landing-login" class="btn btn-login">LOGIN</button>[22m
+[2m  - attempting click action (trial run)[22m
+[2m    - waiting for element to be visible, enabled and stable[22m
+
+[ 2026-10-13T17:11:29.109Z | f5f4cc1a-a04a-422a-bd8e-a151d2c30cd9 ] [DEBUG] [CustomAsserts] Validação falhou: locator('#landing-login') não está clicável: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeEnabled[2m([22m[2m)[22m failed
+
+Locator:  locator('#landing-login')
+Expected: enabled
+Received: undefined
+
+[ 2026-10-13T17:11:29.114Z | f5f4cc1a-a04a-422a-bd8e-a151d2c30cd9 ] [DEBUG] [Actions] Clique falhou no locator('#landing-login'): [2mexpect([22m[31mlocator[39m[2m).[22mtoBeEnabled[2m([22m[2m)[22m failed
+
+Locator:  locator('#landing-login')
+Expected: enabled
+Received: undefined
+
+[ 2026-10-13T17:13:49.046Z | b5d91277-6466-4781-8a16-b8d8dfbfcd3e ] [DEBUG] [CustomAsserts] Validação falhou: locator('#landing-login') não está clicável: [2mexpect([22m[31mlocator[39m[2m).[22mtoBeEnabled[2m([22m[2m)[22m failed
+
+Locator:  locator('#landing-login')
+Expected: enabled
+Received: undefined
+
+[ 2026-10-13T17:13:49.052Z | b5d91277-6466-4781-8a16-b8d8dfbfcd3e ] [DEBUG] [Actions] Clique falhou no locator('#landing-login'): [2mexpect([22m[31mlocator[39m[2m).[22mtoBeEnabled[2m([22m[2m)[22m failed
+
+Locator:  locator('#landing-login')
+Expected: enabled
+Received: undefined
+
+[ 2026-10-13T17:14:07.796Z | a278af3c-4269-4086-8bad-d7859427a251 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#landing-login') está clicável.
+[ 2026-10-13T17:14:08.212Z | a278af3c-4269-4086-8bad-d7859427a251 ] [DEBUG] [Actions] Clique executado no locator('#landing-login')
+[ 2026-10-13T17:14:09.354Z | a278af3c-4269-4086-8bad-d7859427a251 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-email') está visível.
+[ 2026-10-13T17:14:10.238Z | a278af3c-4269-4086-8bad-d7859427a251 ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-email')
+[ 2026-10-13T17:14:10.356Z | a278af3c-4269-4086-8bad-d7859427a251 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-password') está visível.
+[ 2026-10-13T17:14:10.477Z | a278af3c-4269-4086-8bad-d7859427a251 ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-password')
+[ 2026-10-13T17:14:10.720Z | a278af3c-4269-4086-8bad-d7859427a251 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-submit') está clicável.
+[ 2026-10-13T17:14:11.156Z | a278af3c-4269-4086-8bad-d7859427a251 ] [DEBUG] [Actions] Clique executado no locator('#login-submit')

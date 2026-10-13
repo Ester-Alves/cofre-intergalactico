@@ -3,18 +3,27 @@ import { getLoginSelectors } from '../selectors/LoginSelectors';
 import { Actions } from '../utils/Actions';
 import { YamlReader } from '../utils/yamlReader';
 
+/**
+ * Representa a página de login da aplicação.
+ * Centraliza o fluxo de autenticação com ações reutilizáveis do utilitário Actions.
+ */
 export class LoginPage {
   private readonly actions = new Actions();
 
   constructor(private readonly page: Page) {}
 
-  async realizarLogin(email: string, password: string) {
+  /**
+   * Realiza a autenticação do usuário com e-mail e senha informados.
+   * @param email E-mail do usuário
+   * @param senha Senha do usuário
+   */
+  async realizarLogin(email: string, senha: string) {
     const selectors = getLoginSelectors(this.page);
 
     await this.page.goto(YamlReader.get<string>('config', 'base-url'));
-    await this.actions.click(selectors.btnDoLogin);
-    await this.actions.preencher(selectors.txtEmail, email);
-    await this.actions.preencher(selectors.txtPassword, password);
-    await this.actions.click(selectors.btnSubmit);
+    await this.actions.click(selectors.btnAcessarLogin);
+    await this.actions.preencher(selectors.campoEmail, email);
+    await this.actions.preencher(selectors.campoSenha, senha);
+    await this.actions.click(selectors.btnEnviarLogin);
   }
 }
