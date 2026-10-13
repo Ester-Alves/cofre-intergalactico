@@ -26,6 +26,9 @@ jobs:
       run: npx playwright install --with-deps chromium firefox webkit
     - name: Run Playwright tests
       run: npx playwright test
+      env:
+        TESTDINO_TOKEN: ${{ secrets.TESTDINO_TOKEN }}
+        ENVIRONMENT: prod
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
