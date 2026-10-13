@@ -2,6 +2,7 @@ import { expect, type Page } from '@playwright/test';
 import { getLoginSelectors } from '../selectors/LoginSelectors';
 import { Actions } from '../utils/Actions';
 import { YamlReader } from '../utils/yamlReader';
+import { Logger } from '../utils/Logger';
 
 /**
  * Representa a página de login da aplicação.
@@ -25,5 +26,6 @@ export class LoginPage {
     await this.actions.preencher(selectors.campoEmail, email);
     await this.actions.preencher(selectors.campoSenha, senha);
     await this.actions.click(selectors.btnEnviarLogin);
+    Logger.secure('[LoginPage] Login efetuado com sucesso.');
   }
 }
