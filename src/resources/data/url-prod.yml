@@ -1,0 +1,6 @@
+usuario-valido:
+  email: ester@cristina.com
+  senha: Portal@123
+usuario-invalido:
+  email: john@doe.com
+  senha: abc123

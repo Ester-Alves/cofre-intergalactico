@@ -1,0 +1,28 @@
+[ 2026-10-13T23:31:25.255Z | 2e7e0a22-1894-4cc7-9cb1-9d8b300cea9e ] [INFO] [Logger] Arquivo de log limpo e reiniciado
+[ 2026-10-13T23:31:25.256Z | 2e7e0a22-1894-4cc7-9cb1-9d8b300cea9e ] [INFO] [Hooks] Arquivo de Log limpo e o ambiente de teste inicializado.
+[ 2026-10-13T23:31:25.252Z | 483d278e-7811-430e-b223-a47bbf857370 ] [INFO] [Logger] Arquivo de log limpo e reiniciado
+[ 2026-10-13T23:31:25.252Z | 483d278e-7811-430e-b223-a47bbf857370 ] [INFO] [Hooks] Arquivo de Log limpo e o ambiente de teste inicializado.
+[ 2026-10-13T23:31:25.529Z | 668cc757-4da1-4a74-ab5c-009a2eb894e4 ] [INFO] [Hooks] Teste iniciado: não deve logar com senha incorreta
+[ 2026-10-13T23:31:25.556Z | 9dfcac3a-420d-4f3a-9e07-22e9086a392c ] [INFO] [Hooks] Teste iniciado: efetuar login com sucesso
+[ 2026-10-13T23:31:26.860Z | 668cc757-4da1-4a74-ab5c-009a2eb894e4 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#landing-login') está clicável.
+[ 2026-10-13T23:31:26.950Z | 9dfcac3a-420d-4f3a-9e07-22e9086a392c ] [DEBUG] [CustomAsserts] Validação concluída: locator('#landing-login') está clicável.
+[ 2026-10-13T23:31:26.979Z | 668cc757-4da1-4a74-ab5c-009a2eb894e4 ] [DEBUG] [Actions] Clique executado no locator('#landing-login')
+[ 2026-10-13T23:31:27.070Z | 9dfcac3a-420d-4f3a-9e07-22e9086a392c ] [DEBUG] [Actions] Clique executado no locator('#landing-login')
+[ 2026-10-13T23:31:27.144Z | 668cc757-4da1-4a74-ab5c-009a2eb894e4 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-email') está visível.
+[ 2026-10-13T23:31:27.207Z | 9dfcac3a-420d-4f3a-9e07-22e9086a392c ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-email') está visível.
+[ 2026-10-13T23:31:27.217Z | 668cc757-4da1-4a74-ab5c-009a2eb894e4 ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-email')
+[ 2026-10-13T23:31:27.279Z | 9dfcac3a-420d-4f3a-9e07-22e9086a392c ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-email')
+[ 2026-10-13T23:31:27.284Z | 668cc757-4da1-4a74-ab5c-009a2eb894e4 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-password') está visível.
+[ 2026-10-13T23:31:27.335Z | 668cc757-4da1-4a74-ab5c-009a2eb894e4 ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-password')
+[ 2026-10-13T23:31:27.334Z | 9dfcac3a-420d-4f3a-9e07-22e9086a392c ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-password') está visível.
+[ 2026-10-13T23:31:27.387Z | 9dfcac3a-420d-4f3a-9e07-22e9086a392c ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-password')
+[ 2026-10-13T23:31:27.468Z | 668cc757-4da1-4a74-ab5c-009a2eb894e4 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-submit') está clicável.
+[ 2026-10-13T23:31:27.476Z | 9dfcac3a-420d-4f3a-9e07-22e9086a392c ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-submit') está clicável.
+[ 2026-10-13T23:31:27.518Z | 668cc757-4da1-4a74-ab5c-009a2eb894e4 ] [DEBUG] [Actions] Clique executado no locator('#login-submit')
+[ 2026-10-13T23:31:27.518Z | 668cc757-4da1-4a74-ab5c-009a2eb894e4 ] [DEBUG] [LoginPage] Login efetuado com sucesso.
+[ 2026-10-13T23:31:27.542Z | 9dfcac3a-420d-4f3a-9e07-22e9086a392c ] [DEBUG] [Actions] Clique executado no locator('#login-submit')
+[ 2026-10-13T23:31:27.542Z | 9dfcac3a-420d-4f3a-9e07-22e9086a392c ] [DEBUG] [LoginPage] Login efetuado com sucesso.
+[ 2026-10-13T23:31:28.901Z | 668cc757-4da1-4a74-ab5c-009a2eb894e4 ] [INFO] [Hooks] Teste concluído: não deve logar com senha incorreta
+[ 2026-10-13T23:31:28.904Z | 668cc757-4da1-4a74-ab5c-009a2eb894e4 ] [INFO] [Hooks] Instancia da pagina encerrada
+[ 2026-10-13T23:31:29.463Z | 9dfcac3a-420d-4f3a-9e07-22e9086a392c ] [INFO] [Hooks] Teste concluído: efetuar login com sucesso
+[ 2026-10-13T23:31:29.469Z | 9dfcac3a-420d-4f3a-9e07-22e9086a392c ] [INFO] [Hooks] Instancia da pagina encerrada

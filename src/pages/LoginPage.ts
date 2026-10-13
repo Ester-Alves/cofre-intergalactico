@@ -1,26 +1,29 @@
 import { expect, type Page } from '@playwright/test';
-import { readFileSync } from 'node:fs';
-import path from 'node:path';
-import { load } from 'js-yaml';
 import { getLoginSelectors } from '../selectors/LoginSelectors';
 import { Actions } from '../utils/Actions';
+import { Logger } from '../utils/Logger';
 
-const config = load(
-  readFileSync(path.resolve(__dirname, '../resources/config/url-prod.yml'), 'utf8'),
-) as { 'base-url': string };
-
+/**
+ * Representa a página de login da aplicação.
+ * Centraliza o fluxo de autenticação com ações reutilizáveis do utilitário Actions.
+ */
 export class LoginPage {
   private readonly actions = new Actions();
 
   constructor(private readonly page: Page) {}
 
-  async realizarLogin(email: string, password: string) {
+  /**
+   * Realiza a autenticação do usuário com e-mail e senha informados.
+   * @param email E-mail do usuário
+   * @param senha Senha do usuário
+   */
+  async realizarLogin(email: string, senha: string) {
     const selectors = getLoginSelectors(this.page);
 
-    await this.page.goto(config['base-url']);
-    await selectors.btnDoLogin.click();
-    await this.actions.preencher(selectors.txtEmail, email);
-    await this.actions.preencher(selectors.txtPassword, password);
-    await selectors.btnSubmit.click();
+    await this.actions.click(selectors.btnAcessarLogin);
+    await this.actions.preencher(selectors.campoEmail, email);
+    await this.actions.preencher(selectors.campoSenha, senha);
+    await this.actions.click(selectors.btnEnviarLogin);
+    Logger.secure('[LoginPage] Login efetuado com sucesso.');
   }
 }
