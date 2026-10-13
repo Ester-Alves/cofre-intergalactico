@@ -51,7 +51,7 @@ class Hooks {
     Logger.setExecutionId();
     Logger.info(`[Hooks] Teste iniciado: ${testInfo.title}`);
 
-    const baseUrl = (YamlReader as any).readUrl(process.env.ENV || 'prod');
+    const baseUrl = YamlReader.get<string>('config', 'base-url');
     await page.goto(baseUrl);
   }
 

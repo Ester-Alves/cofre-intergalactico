@@ -4,6 +4,7 @@ import { HomePage } from '../src/pages/HomePage';
 import { CadastroReceita } from '../src/pages/CadastroReceitaPage';
 import { Asserts } from '../src/utils/Asserts';
 import { YamlReader } from '../src/utils/yamlReader';
+import '../src/core/hooks';
 
 test.beforeEach(async ({ page }) => {
     const loginPage = new LoginPage(page);

@@ -1,7 +1,6 @@
 import { expect, type Page } from '@playwright/test';
 import { getLoginSelectors } from '../selectors/LoginSelectors';
 import { Actions } from '../utils/Actions';
-import { YamlReader } from '../utils/yamlReader';
 import { Logger } from '../utils/Logger';
 
 /**
@@ -21,7 +20,6 @@ export class LoginPage {
   async realizarLogin(email: string, senha: string) {
     const selectors = getLoginSelectors(this.page);
 
-    await this.page.goto(YamlReader.get<string>('config', 'base-url'));
     await this.actions.click(selectors.btnAcessarLogin);
     await this.actions.preencher(selectors.campoEmail, email);
     await this.actions.preencher(selectors.campoSenha, senha);
