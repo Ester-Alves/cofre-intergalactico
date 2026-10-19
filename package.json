@@ -3,15 +3,23 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+	  "login": "npx playwright test tests/login.spec.ts",
+    "cadastro": "npx playwright test tests/cadastro-receita.spec.ts",
+    "tag": "npx playwright test --grep"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.62.1",
+    "@testdino/playwright": "^2.10.0",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^26.3.0",
     "js-yaml": "^5.4.0"
+  },
+  "dependencies": {
+    "winston": "^3.19.0"
   }
 }
