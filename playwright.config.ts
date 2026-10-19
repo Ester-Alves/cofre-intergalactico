@@ -1,5 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
+const testDinoReporter = require.resolve('@testdino/playwright').replace(/index\.js$/, 'index.mjs');
+
 /**
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
@@ -24,7 +26,7 @@ export default defineConfig({
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: [
     ['html', { outputDir: './playwright-report' }],
-    ['@testdino/playwright', { token: process.env.TESTDINO_TOKEN }],
+    [testDinoReporter, { token: process.env.TESTDINO_TOKEN }],
   ],
   /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
   use: {
