@@ -3,31 +3,33 @@ import { LoginPage } from '../src/pages/LoginPage';
 import { HomePage } from '../src/pages/HomePage';
 import { CadastroReceita } from '../src/pages/CadastroReceitaPage';
 import { Asserts } from '../src/utils/Asserts';
+import { YamlReader } from '../src/utils/yamlReader';
+import '../src/core/hooks';
 
 test.beforeEach(async ({ page }) => {
     const loginPage = new LoginPage(page);
-    await loginPage.realizarLogin('ester@cristina.com', 'Portal@123');
+    await loginPage.realizarLogin(YamlReader.get('data', 'usuario-valido.email'), YamlReader.get('data', 'usuario-valido.senha'));
     await Asserts.validarElementoVisivel(page.getByText('SEJA BEM-VINDO AO COFRE INTERGALÁCTICO'));
 
     const homePage = new HomePage(page);
-    await homePage.incluirCadastroReceita();
+    await homePage.abrirCadastroReceita();
     await Asserts.validarElementoVisivel(page.getByText('NOVA RECEITA'));
 })
 
-test('cadastrar nova receita com pagamento a vista com sucesso', async ({ page }) => {
+test('cadastrar nova receita com pagamento a vista com sucesso', { tag: '@smoke' }, async ({ page }) => {
     const cadastroReceita = new CadastroReceita(page);
-    await cadastroReceita.cadastrarReceita('Nave 3000', '10000', '2026-10-22', 'Aluguel', 'Recebimento à vista', '');
+    await cadastroReceita.registrarReceita('Nave 3000', '10000', '2026-10-22', 'Aluguel', 'Recebimento à vista', '');
     await Asserts.validarElementoVisivel(page.getByText('COFRE ABASTECIDO!'));
 });
 
 test('cadastrar nova receita com pagamento parcelado com sucesso', async ({ page }) => {
     const cadastroReceita = new CadastroReceita(page);
-    await cadastroReceita.cadastrarReceita('Nave 6000', '400000', '2026-10-22', 'Aluguel', 'Recebimento parcelado', '4');
+    await cadastroReceita.registrarReceita('Nave 6000', '400000', '2026-10-22', 'Aluguel', 'Recebimento parcelado', '4');
     await Asserts.validarElementoVisivel(page.getByText('COFRE ABASTECIDO!'));
 });
 
 test('não deve cadastrar nova receita sem valor recebido', async ({ page }) => {
     const cadastroReceita = new CadastroReceita(page);
-    await cadastroReceita.cadastrarReceita('Nave 3000', '', '2026-10-22', 'Aluguel', 'Recebimento à vista');
+    await cadastroReceita.registrarReceita('Nave 3000', '', '2026-10-22', 'Aluguel', 'Recebimento à vista');
     await Asserts.validarElementoVisivel(page.getByText('O valor deve ser maior que zero.'));
 })

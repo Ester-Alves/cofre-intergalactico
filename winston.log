@@ -1,0 +1,14 @@
+[ 2026-10-27T13:07:04.212Z | 2a1ece04-fe69-4d29-8327-95cc7d92a52d ] [INFO] [Logger] Arquivo de log limpo e reiniciado
+[ 2026-10-27T13:07:04.215Z | 2a1ece04-fe69-4d29-8327-95cc7d92a52d ] [INFO] [Hooks] Arquivo de Log limpo e o ambiente de teste inicializado.
+[ 2026-10-27T13:07:05.678Z | 9b104084-7e72-4156-be98-e94778ed6863 ] [INFO] [Hooks] Teste iniciado: efetuar login com sucesso
+[ 2026-10-27T13:07:11.127Z | 9b104084-7e72-4156-be98-e94778ed6863 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#landing-login') está clicável.
+[ 2026-10-27T13:07:13.899Z | 9b104084-7e72-4156-be98-e94778ed6863 ] [DEBUG] [Actions] Clique executado no locator('#landing-login')
+[ 2026-10-27T13:07:14.065Z | 9b104084-7e72-4156-be98-e94778ed6863 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-email') está visível.
+[ 2026-10-27T13:07:14.348Z | 9b104084-7e72-4156-be98-e94778ed6863 ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-email')
+[ 2026-10-27T13:07:14.784Z | 9b104084-7e72-4156-be98-e94778ed6863 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-password') está visível.
+[ 2026-10-27T13:07:15.177Z | 9b104084-7e72-4156-be98-e94778ed6863 ] [DEBUG] [Actions] Texto preenchido no campo locator('#login-password')
+[ 2026-10-27T13:07:15.885Z | 9b104084-7e72-4156-be98-e94778ed6863 ] [DEBUG] [CustomAsserts] Validação concluída: locator('#login-submit') está clicável.
+[ 2026-10-27T13:07:16.007Z | 9b104084-7e72-4156-be98-e94778ed6863 ] [DEBUG] [Actions] Clique executado no locator('#login-submit')
+[ 2026-10-27T13:07:16.007Z | 9b104084-7e72-4156-be98-e94778ed6863 ] [DEBUG] [LoginPage] Formulário de login enviado.
+[ 2026-10-27T13:07:17.897Z | 9b104084-7e72-4156-be98-e94778ed6863 ] [INFO] [Hooks] Teste concluído: efetuar login com sucesso
+[ 2026-10-27T13:07:17.952Z | 9b104084-7e72-4156-be98-e94778ed6863 ] [INFO] [Hooks] Instancia da pagina encerrada
