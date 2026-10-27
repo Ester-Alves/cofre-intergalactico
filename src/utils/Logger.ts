@@ -5,8 +5,8 @@ import dotenv from 'dotenv';
 dotenv.config({ quiet: true });
 
 /**
- * Utilitário centralizado de logs usando Winston.
- * Suporta logs seguros, rastreamento de sessão e sanitização automática de dados sensíveis.
+ * Centraliza os logs com Winston e identifica as execuções por sessão ou teste.
+ * Mascara alguns padrões conhecidos de dados sensíveis, como e-mail, CPF, senha e token Bearer.
  */
 export class Logger {
   private static sessionId: string = crypto.randomUUID();

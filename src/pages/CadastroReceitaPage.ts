@@ -1,17 +1,11 @@
-import { expect, type Page } from '@playwright/test';
-import { readFileSync } from 'node:fs';
-import path from 'node:path';
-import { load } from 'js-yaml';
+import { type Page } from '@playwright/test';
 import { getReceitaSelectors } from '../selectors/CadastroReceitaSelectors';
 import { Actions } from '../utils/Actions';
-
-const config = load(
-  readFileSync(path.resolve(__dirname, '../resources/config/url-prod.yml'), 'utf8'),
-) as { 'cadastro-receita-url': string };
+import { Logger } from '../utils/Logger';
 
 /**
  * Representa a tela de cadastro de receitas.
- * Centraliza o preenchimento dos campos e o fluxo de confirmação do cadastro.
+ * Centraliza o preenchimento dos campos e envio do formulário de cadastro.
  */
 export class CadastroReceita {
   private readonly selectors;
@@ -58,5 +52,6 @@ export class CadastroReceita {
     }
 
     await this.actions.click(this.selectors.btnCadastrarReceita);
+        Logger.secure('[CadastroReceita] Formulário de cadastro de receita enviado.');
   }
 }

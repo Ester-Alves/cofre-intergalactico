@@ -1,4 +1,4 @@
-import { expect, type Page } from '@playwright/test';
+import { type Page } from '@playwright/test';
 import { getLoginSelectors } from '../selectors/LoginSelectors';
 import { Actions } from '../utils/Actions';
 import { Logger } from '../utils/Logger';
@@ -24,6 +24,6 @@ export class LoginPage {
     await this.actions.preencher(selectors.campoEmail, email);
     await this.actions.preencher(selectors.campoSenha, senha);
     await this.actions.click(selectors.btnEnviarLogin);
-    Logger.secure('[LoginPage] Login efetuado com sucesso.');
+    Logger.secure('[LoginPage] Formulário de login enviado.');
   }
 }

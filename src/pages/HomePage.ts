@@ -1,13 +1,6 @@
-﻿import { expect, type Page } from '@playwright/test';
-import { readFileSync } from 'node:fs';
-import path from 'node:path';
-import { load } from 'js-yaml';
+﻿import { type Page } from '@playwright/test';
 import { getHomeSelectors } from '../selectors/HomeSelectors';
 import { Actions } from '../utils/Actions';
-
-const config = load(
-  readFileSync(path.resolve(__dirname, '../resources/config/url-prod.yml'), 'utf8'),
-) as { 'home-url': string };
 
 /**
  * Representa a página inicial após o login.

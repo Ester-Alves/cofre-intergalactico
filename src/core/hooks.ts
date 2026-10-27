@@ -7,14 +7,13 @@ import dotenv from 'dotenv';
 dotenv.config({ quiet: true });
 
 /**
- * Manages global test lifecycle hooks including environment setup,
- * report cleanup, Azure DevOps integration, metrics collection,
- * and per-test execution tracking.
+ * Gerencia os hooks globais do ciclo de vida dos testes, incluindo a limpeza
+ * dos relatórios, a inicialização dos logs e o acompanhamento das execuções.
  */
 class Hooks {
   /**
-   * Deletes previous test report directories to ensure a clean run.
-   * This prevents stale data from affecting current test results.
+  * Exclui os diretórios de relatórios de testes anteriores para garantir
+  * uma execução limpa e evitar que dados antigos afetem os resultados atuais.
    */
   async cleanReports(): Promise<void> {
     const reportDirs = ['allure-results', 'playwright-report', 'test-results']
@@ -31,8 +30,8 @@ class Hooks {
   }
 
   /**
-   * Runs once before all tests.
-   * Cleans up previous reports, initializes logging, and starts the metrics server.
+  * Executa uma vez antes de todos os testes.
+  * Exclui os relatórios anteriores e limpa o arquivo de log.
    */
   async beforeAllTests(): Promise<void> {
     await this.cleanReports();
@@ -41,11 +40,11 @@ class Hooks {
   }
 
   /**
-   * Runs before each test.
-   * Sets a unique execution ID, navigates to the base URL, and activates the test case in Azure DevOps.
+  * Executa antes de cada teste.
+  * Define um ID de execução único e acessa a URL base.
    *
-   * @param page - Playwright page instance
-   * @param testInfo - Metadata about the current test
+  * @param page - Instância da página do Playwright
+  * @param testInfo - Metadados do teste atual
    */
   async beforeEachTest(page: any, testInfo: TestInfo): Promise<void> {
     Logger.setExecutionId();
@@ -56,23 +55,22 @@ class Hooks {
   }
 
   /**
-   * Runs after each test.
-   * Publishes the test result to Azure DevOps, updates BrowserStack status,
-   * records metrics, and closes the browser page.
+  * Executa após cada teste.
+  * Fecha a página do navegador.
    *
-   * @param page - Playwright page instance
-   * @param testInfo - Metadata about the completed test
+  * @param page - Instância da página do Playwright
+  * @param testInfo - Metadados do teste concluído
    */
   async afterEachTest(page: any, testInfo: TestInfo): Promise<void> {
     Logger.info(`[Hooks] Teste concluído: ${testInfo.title}`);
 
-    // Cleanup: Close browser page
+    // Limpeza: fecha a página do navegador
     await page.close();
     Logger.info(`[Hooks] Instancia da pagina encerrada`);
   }
 }
 
-// Register hooks globally
+// Registra os hooks globalmente
 const hooks = new Hooks();
 
 test.beforeAll(async () => {

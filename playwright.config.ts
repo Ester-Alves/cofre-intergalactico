@@ -1,44 +1,39 @@
 import { defineConfig, devices } from '@playwright/test';
+import dotenv from 'dotenv';
+
+dotenv.config({ quiet: true });
 
 const testDinoReporter = require.resolve('@testdino/playwright').replace(/index\.js$/, 'index.mjs');
 
 /**
- * Read environment variables from file.
- * https://github.com/motdotla/dotenv
- */
-// import dotenv from 'dotenv';
-// import path from 'path';
-// dotenv.config({ path: path.resolve(__dirname, '.env') });
-
-/**
- * See https://playwright.dev/docs/test-configuration.
+ * Consulte https://playwright.dev/docs/test-configuration.
  */
 export default defineConfig({
   testDir: './tests',
-  /* Run tests in files in parallel */
+  /* Executa todos os testes em paralelo. */
   fullyParallel: true,
-  /* Fail the build on CI if you accidentally left test.only in the source code. */
+  /* Faz a execução falhar na CI se houver test.only no código-fonte. */
   forbidOnly: !!process.env.CI,
-  /* Retry on CI only */
+  /* Repete os testes apenas na CI. */
   retries: process.env.CI ? 2 : 0,
-  /* Opt out of parallel tests on CI. */
+  /* Desativa a execução paralela na CI. */
   workers: process.env.CI ? 1 : undefined,
-  /* Reporter to use. See https://playwright.dev/docs/test-reporters */
+  /* Relatórios utilizados. Consulte https://playwright.dev/docs/test-reporters. */
   reporter: [
     ['html', { outputDir: './playwright-report' }],
     [testDinoReporter, { token: process.env.TESTDINO_TOKEN }],
   ],
-  /* Shared settings for all the projects below. See https://playwright.dev/docs/api/class-testoptions. */
+  /* Configurações compartilhadas por todos os projetos abaixo. Consulte https://playwright.dev/docs/api/class-testoptions. */
   use: {
     headless: true,
-    /* Base URL to use in actions like `await page.goto('')`. */
+    /* URL base usada em ações como `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
 
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    /* Coleta rastreamentos ao repetir um teste. Consulte https://playwright.dev/docs/trace-viewer. */
     trace: 'on-first-retry',
   },
 
-  /* Configure projects for major browsers */
+  /* Projetos disponíveis; atualmente, apenas Chromium está habilitado. */
   projects: [
     {
       name: 'chromium',
@@ -49,21 +44,13 @@ export default defineConfig({
     //   name: 'firefox',
     //   use: { ...devices['Desktop Firefox'] },
     // },
-    // {
-    //   name: 'firefox',
-    //   use: { ...devices['Desktop Firefox'] },
-    // },
 
     // {
     //   name: 'webkit',
     //   use: { ...devices['Desktop Safari'] },
     // },
-    // {
-    //   name: 'webkit',
-    //   use: { ...devices['Desktop Safari'] },
-    // },
 
-    /* Test against mobile viewports. */
+    /* Exemplos desativados para dispositivos móveis. */
     // {
     //   name: 'Mobile Chrome',
     //   use: { ...devices['Pixel 5'] },
@@ -73,7 +60,7 @@ export default defineConfig({
     //   use: { ...devices['iPhone 12'] },
     // },
 
-    /* Test against branded browsers. */
+    /* Exemplos desativados para navegadores específicos. */
     // {
     //   name: 'Microsoft Edge',
     //   use: { ...devices['Desktop Edge'], channel: 'msedge' },
@@ -84,7 +71,7 @@ export default defineConfig({
     // },
   ],
 
-  /* Run your local dev server before starting the tests */
+  /* Exemplo desativado para iniciar um servidor local antes dos testes. */
   // webServer: {
   //   command: 'npm run start',
   //   url: 'http://localhost:3000',
