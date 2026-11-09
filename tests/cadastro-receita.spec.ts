@@ -1,10 +1,4 @@
-import { test, expect } from '@playwright/test';
-import { LoginPage } from '../src/pages/LoginPage';
-import { HomePage } from '../src/pages/HomePage';
-import { CadastroReceita } from '../src/pages/CadastroReceitaPage';
-import { Asserts } from '../src/utils/Asserts';
-import { YamlReader } from '../src/utils/yamlReader';
-import '../src/core/hooks';
+import { test, LoginPage, HomePage, CadastroReceita, Asserts, YamlReader } from './fixtures';
 
 test.beforeEach(async ({ page }) => {
     const loginPage = new LoginPage(page);

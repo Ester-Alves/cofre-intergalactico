@@ -1,7 +1,4 @@
-import { test, expect } from '@playwright/test';
-import { LoginPage } from '../src/pages/LoginPage';
-import { YamlReader } from '../src/utils/yamlReader';
-import '../src/core/hooks';
+import { test, expect, LoginPage, YamlReader } from './fixtures';
 
 test('efetuar login com sucesso', { tag: '@smoke' }, async ({ page }) => {
   const loginPage = new LoginPage(page);
