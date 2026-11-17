@@ -1,4 +1,4 @@
-import { test, LoginPage, HomePage, CadastroReceita, Asserts, YamlReader } from './fixtures';
+import { Asserts, CadastroReceita, HomePage, LoginPage, test, YamlReader } from './fixtures';
 
 test.beforeEach(async ({ page }) => {
     const loginPage = new LoginPage(page);

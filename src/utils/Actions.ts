@@ -1,4 +1,4 @@
-import { type Locator } from '@playwright/test';
+import type { Locator } from '@playwright/test';
 import { Asserts } from './Asserts';
 import { Logger } from './Logger';
 

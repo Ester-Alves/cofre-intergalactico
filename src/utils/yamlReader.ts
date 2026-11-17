@@ -1,8 +1,6 @@
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import path from 'node:path';
 import yaml from 'js-yaml';
-import dotenv from 'dotenv';
-dotenv.config({ quiet: true });
 
 type Folder = 'config' | 'data';
 

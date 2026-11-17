@@ -1,10 +1,8 @@
-import { test, TestInfo } from '@playwright/test';
-import { YamlReader } from '../utils/yamlReader';
+import fs from 'node:fs/promises';
+import path from 'node:path';
+import { test, type Page, type TestInfo } from '@playwright/test';
 import { Logger } from '../utils/Logger';
-import fs from 'fs/promises';
-import path from 'path';
-import dotenv from 'dotenv';
-dotenv.config({ quiet: true });
+import { YamlReader } from '../utils/yamlReader';
 
 /**
  * Gerencia os hooks globais do ciclo de vida dos testes, incluindo a limpeza
@@ -46,7 +44,7 @@ class Hooks {
   * @param page - Instância da página do Playwright
   * @param testInfo - Metadados do teste atual
    */
-  async beforeEachTest(page: any, testInfo: TestInfo): Promise<void> {
+  async beforeEachTest(page: Page, testInfo: TestInfo): Promise<void> {
     Logger.setExecutionId();
     Logger.info(`[Hooks] Teste iniciado: ${testInfo.title}`);
 
@@ -61,7 +59,7 @@ class Hooks {
   * @param page - Instância da página do Playwright
   * @param testInfo - Metadados do teste concluído
    */
-  async afterEachTest(page: any, testInfo: TestInfo): Promise<void> {
+  async afterEachTest(page: Page, testInfo: TestInfo): Promise<void> {
     Logger.info(`[Hooks] Teste concluído: ${testInfo.title}`);
 
     // Limpeza: fecha a página do navegador

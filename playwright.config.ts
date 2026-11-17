@@ -1,5 +1,5 @@
-import { defineConfig, devices } from '@playwright/test';
 import dotenv from 'dotenv';
+import { defineConfig, devices } from '@playwright/test';
 
 dotenv.config({ quiet: true });
 

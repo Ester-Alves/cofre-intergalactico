@@ -1,4 +1,4 @@
-import { type Page } from '@playwright/test';
+import type { Page } from '@playwright/test';
 import { getLoginSelectors } from '../selectors/LoginSelectors';
 import { Actions } from '../utils/Actions';
 import { Logger } from '../utils/Logger';

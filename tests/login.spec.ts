@@ -1,4 +1,4 @@
-import { test, expect, LoginPage, YamlReader } from './fixtures';
+import { expect, LoginPage, test, YamlReader } from './fixtures';
 
 test('efetuar login com sucesso', { tag: '@smoke' }, async ({ page }) => {
   const loginPage = new LoginPage(page);
