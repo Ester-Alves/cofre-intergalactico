@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare": "husky install",
+    "precommit": "git add . ",
+    "commit": "git cz && node .husky/push.js",
     "login": "npx playwright test tests/login.spec.ts",
     "cadastro": "npx playwright test tests/cadastro-receita.spec.ts",
     "tag": "npx playwright test --grep"
@@ -17,6 +20,8 @@
     "@testdino/playwright": "^2.10.0",
     "@types/js-yaml": "^4.0.9",
     "@types/node": "^26.3.0",
+    "git-cz": "^4.9.0",
+    "husky": "^9.1.7",
     "js-yaml": "^5.4.0"
   },
   "dependencies": {
