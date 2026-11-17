@@ -1,8 +1,6 @@
-import fs from 'fs';
-import crypto from 'crypto';
-import { createLogger, format, transports, Logger as WinstonLogger } from 'winston';
-import dotenv from 'dotenv';
-dotenv.config({ quiet: true });
+import crypto from 'node:crypto';
+import fs from 'node:fs';
+import { createLogger, format, transports, type Logger as WinstonLogger } from 'winston';
 
 /**
  * Centraliza os logs com Winston e identifica as execuções por sessão ou teste.
@@ -47,9 +45,9 @@ export class Logger {
   static clearLogFile(): void {
     try {
       fs.writeFileSync('winston.log', '', 'utf8');
-      Logger.logger.info(`[Logger] Arquivo de log limpo e reiniciado`);
+      Logger.info(`[Logger] Arquivo de log limpo e reiniciado`);
     } catch (error: any) {
-      Logger.logger.error(`[Logger] Falha ao limpar o arquivo de log: ${error.message}`);
+      Logger.error(`[Logger] Falha ao limpar o arquivo de log: ${error.message}`);
     }
   }
 
@@ -74,7 +72,7 @@ export class Logger {
    * @param message A mensagem a ser registrada
    */
   static secure(message: string): void {
-    Logger.logger.debug(Logger.sanitize(message));
+    Logger.debug(Logger.sanitize(message));
   }
 
   /**
